@@ -13,14 +13,6 @@ const sumNums = (num1, num2) => num1 + num2;
 const squareNum = (num) => num * num;
 
 // [🌶️🌶️] Create an arrow function that takes an array of numbers and returns a new array with each number squared.
-const squareArray = (arrayOfNums) => {
-    let newArray = []
-    arrayOfNums.forEach(element => {
-        let newElement = element ** 2
-        newArray.push(newElement)
-    });
-    return newArray;
-}
+const squareArray = (arrayOfNums) => arrayOfNums.map((ele) => ele ** 2)
 
-// console.log(greet('Mohammad'), sumNums(1,4), squareNum(5), squareArray([1,2,3,4,5,6,7,8,9,10]))
-
+// console.log(greet('Mohammad'), sumNums(1,4), squareNum(5), squareArray2([1,2,3,4,5,6,7,8,9,10]))
